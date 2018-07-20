@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+font-family:candara;
+font-size:20px;
+
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="d27.jpg"    height=800px width=1900px">
+  <img class="mySlides" src="d29.jpg"   height=800px width=1900px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+22nd to 25th Nov 2018
+<p style="font-size:25px"><b>DOUBLE DELIGHT: TRAVEL & PHOTOGRAPHY</b>
+<h3>A Photography trail through Rajasthan with Dheeraj Paul</h3>
+<p class="h">
+
+
+f travel and photography go hand in hand for you, this trail through Rajasthan in January is a tailor made one! Learn photography in a fun way as master photographer Dheeraj Paul leads the journey through Shekhawati, Khichan and Jodhpur. Participants get to shoot a variety of subjects that include –architecture, art, street life, desert, birds and portraits – in the best season to visit Rajasthan. Enhance your photography skills on this road journey with our mentor as he throws light on capturing fleeting moments – frames that capture colour, composition and lighting in just the right proportion. So whether you are a DSLR, Mirrorless, Compact or Smartphone user, chances are you will not miss the “decisive moment” again!
+
+Another USP of this tour includes the opportunity to use Advance Mirrorless cameras and lenses. Participants can use the cutting-edge Sony Alpha series at no rental cost. A great opportunity to use a new technology under expert supervision!
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-lg-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - DHEERAJ PAUL</p>
+<p style="font-size:20px">
+
+Hailing from a family of brilliant photographers, Dheeraj Paul learnt the ropes from father S.Paul, one of the doyens of photo journalism in India. A versatile photographer with over two decades in the profession, he specializes in travel, food, architecture and fine-art photography. He is one the brand ambassadors for Sony Alpha professional camera equipment. A multiple award winner at the global level, he has featured in over 30 books on various subject including ‘Around India’s First Table: Dining and Entertaining at the Rashtrapati Bhavan’, ‘ The Golden Temple - A Gift to Humanity’ among others.
+</p>
+</div>
+<div class="col-lg-5">
+<img src="dhe.jpg" 
+alt="photo" width=400px height=400px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - Ex Delhi</p>
+<p><em>Date: 13th to 19th Jan 2019 (6 Nights/7 Days)</em></p>
+<p class="h"><b>Day 1 - Gurgaon - Mandawa</b></p>
+<p >We head out for Jhunjhunu from Gurgaon in Delhi NCR. As we drive through the winter countryside, be ready for impromptu shoots. We visit Surajgarh en route. On arrival in Jhunjhunu we shoot a rather uniquely designed temple built in the form of a haveli. The colours, the form and the varied design elements make it a highlight. Then we hop across to a newly built haveli with fresh frescos. As a counterpoint we visit an old, classical haveli with peeling art, one that reveals stories of a time when these towns played an important part in the trade routes before the sea routes altered their fate. Of a time before the celebrated merchant families (read the Birlas, the Poddars, the Singhanias) of Shekhawati set out to seek newer pastures in India’s port cities.
+
+</p><p>Overnight at Mandawa.
+
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">DAY 2 - Mandawa </b>
+<p class="h">Mandawa is at the heart of Rajasthan’s famous Shekhawati region. Mandawa is a veritable open air museum. A place which inspires visual artists! We shoot architecture, frescos and street life along routes that were once part of the fabled Silk Route – where caravans stopped on their way to trade in distant lands! On our fresco trail we make pit stops at Goenka Double Haveli, Mohanlal Saraf Haveli and the Chowkhani.
+
+We also visit Nawalgarh to shoot the famous Poddar Haveli and Morarka Haveli Museum.
+
+Overnight at Mandawa.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p ><b>DAY 3 -Mandawa - Khichan</b></p>
+
+<p class="h">
+After breakfast we head out to Khichan. A birder’s haven, this little known village in Rajasthan has become a hub for birding enthusiasts who come to study the demoiselle cranes. The remote village offers a great opportunity to shoot birds in flight, their feeding process et al in a small area. We catch the birding action in evening light.
+
+</p><p>Overnight at Khichan.
+
+
+</p>
+
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 4 - Khichan</b></p>
+<p class="h">
+
+We begin the day early to catch up with the demoiselle cranes and other birds. Enjoy this unique experience of shooting in a place that has come up due to efforts of a few enterprising villagers who are ecologists and environmentalists rolled into one.
+
+Post lunch, gear up for an extensive street, portrait and architectural shoot sessions at vantage locations of this amazing village.
+
+</p><p>Overnight at Khichan.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 5 - Khichan - Jodhpur</b></p>
+<p class="h"> 
+
+We head out for Jodhpur through some of the finest dunes in the Thar Desert via Osian. An extensive photo session followed by lunch awaits participants at a desert resort. Later that evening we’ll have an indoor critic session to analyse the photography efforts of each guests at Jodhpur.
+
+</p><p>Overnight at Jodhpur.
+
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 6 - Jodhpur</b></p>
+<p class="h"> 
+After an early breakfast, we head out for a photo-walk through the streets of the Blue City that sets the ball rolling for an enthralling day’s photography. Major conservation efforts are turning the old town into an attractive spot for travelers and offer great opportunities for photography. Thereafter, we head out to Mehrangarh Fort. Built in 1460 by Roa Jodha, this imposing fort on a hill houses well-preserved cannons, exquisite stain glass rooms; massive courtyards besides the sprawling ramparts of the fort make it a photographer’s delight.
+
+</p><p>Overnight at Jodhpur.
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 7 - Return Back</b></p>
+<p class="h"> 
+Post breakfast, respective departures with cards full 
+of amazing images and memories as our signature photo-trail ends at Jodhpur.
+</p>
+<p class="h">Tour ends.</p>
+</div>
+</div>
+
+
+
+<p><u><h3>
+Inclusions:</h3> </u></p>
+
+<ul>
+<li>Inland travel by AC Deluxe Coach or equivalent</li>
+<li>Accommodation at heritage, resort and four star properties on twin sharing basis</li>
+<li>All meals (daily breakfast, lunch, evening tea and dinner)</li>
+<li>Guided visit to the sites and local transfers of the group</li>
+<li>Guided photography sessions with leading travel, people and architecture 
+photographer – Dheeraj Paul & the mentoring team</li>
+<li>Regular analysis and image reviews through the tour</li>
+</ul>
+<h3><u>Tour Price does not include:</u></h3>
+<ul>
+<li>Expenses of personal nature like tips, phone calls, laundry , internet usage etc.</li>
+<li>Monument and camera fee wherever applicable.</li>
+<li>Travel charges to Photo Tour start location Delhi NCR/Gurgaon, Haryana</li>
+
+</ul>
+
+<h3><u>Cost</u></h3>
+<p>Rs 43,999 Per Person + GST (Twin sharing)</p>
+<h3><u>Contact</u></h3>
+<p>Tel: 8210424768/9460071213</p><p> Email: connect.amt@gmail.com</p>
+
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="d21.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d22.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d23.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d24.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d25.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="d26.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d27.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d28.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d29.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d30.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d31.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d32.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email: connect.amt@gmail.com </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768/9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px;background:none;">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>

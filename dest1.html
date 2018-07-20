@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+font-size:20px;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+font-size:20px;
+font-family:candara;
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="d7.jpg"    height=800px width=1900px">
+  <img class="mySlides" src="d9.jpg"   height=800px width=1900px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+22nd to 25th Nov 2018
+<p style="font-size:25px"><b>DOWN THE KONKAN COAST </b>
+<h3>A culinary trail with Smita Deo</h3>
+<p class="h">Among the many fascinating culinary traditions in India, the Konkan cuisine is a delectable potpourri. A cuisine that has seen waves of influence ranging from the Saraswat Brahmins to the Portuguese, have all contributed in spicing up the intrinsically rooted Konkan culinary tradition. The Konkan region nestles between the Western Ghats and the Arabian Sea, starting from south of Mumbai to Mangalore along India’s western seaboard.
+
+In this 4-day trail we travel by road and sample food of three sub-regions within Konkan – Maharashtra’s Malvan belt, Goa and North Karnataka. We walk through bazaars looking for local ingredients, eat at a Hindu priest’s house, enjoy a multi-course Catholic lunch at a heritage house in Goa, hike through a spice plantation, and enjoy a cooking session with chef and cookbook author Smita Deo in Karwar.
+
+From the rustic, pristine Malvan we hop across to cosmopolitan Goa. And onto Karwar! Sit back and enjoy the drive though picturesque hill stretches, high plateaus, cliffs falling into the sea. Watch that engineering marvel called Konkan Rail criss-cross our path, as we set out on a culinary journey dominated by coconut, kokum and sea food among others.<p>
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-sm-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - SMITA DEO</p>
+<p style="font-size:20px">Home chef and cookbook author Smita Deo appears in a weekly cooking video series. She has penned a book which covers coastal cuisine of Konkan among others. She lives in Mumbai with filmmaker husband and son.
+
+</p>
+
+ </p>
+</div>
+<div class="col-sm-5">
+<img src="smita.jpg" 
+alt="photo" width=300px height=300px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container" style="font-size:20px">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - Ex Mumbai</p>
+<p><em>Date: 22nd to 25th Nov 2018 (3 Nights/4 Days)</em></p>
+<p class="h"><b>Day 1 - Mumbai - Ganpatipule</b></p>
+The 4-day trail begins from Santa Cruz, Mumbai at 6.30 am as we leave for our first halt at Panvel. After a quick breakfast of Mumbai’s go-to food of missal pav, pohe, batata vada and kharvas, we hit the more picturesque stretch. By afternoon we get to Chiplun for lunch. Savour Malvani cuisine of fried fish, rice, chicken/mutton and sol kadi – it is a very popular drink in the coastal region which is made with kokum and fresh coconut milk, sour and spicy to taste. It is an amazing digestive. The vegetarian fare is dominated by sprouts, and is equally interesting. Dinner at Ganpatipule, the temple town by the sea! After a sattvic meal (cooked without onion and garlic), put your feet up at a sea facing resort or chat up Smita on the nuances of the region’s culinary traditions.
+
+Overnight at Ganpatipule.
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">DAY 2 - Ganpatipule - Goa </b>
+<p class="h" style="font-size:20px">After breakfast we head out for a drive – that is often given the miss – into the heart of Malvan. Enjoy the sights, sounds and aromas of a quaint town by the sea, as we walk its narrow, sunlit streets to shop for spices, masalas and ingredients. Eat at a small, but iconic joint close to the Maratha sea bastion named Sindhudurg. Here we will have a typical Malvani meal of fish thali, kombdi vade and veg thali. The amazing thing about this place is that the menu depends on the fresh catch of the day. So eat 100% fresh food. The veg thali has the most amazing usal (lentil curry) amti (dal) and the best fruit khand (a dessert where fruits are added to shrikhand).
+
+After lunch we set out for Goa. Another sea facing resort beckons.
+
+This fascinating state exhibits the cultural influences from the Kadambas to the Portuguese. Here we will taste two distinctive traditions of food – the Goan Hindu and the Goan Catholic cuisines. But on day two we will have a regular set menu for dinner just to avoid an over dose of coconut based gravies.
+
+Overnight at Goa.</p>
+
+<p class="h">Legend has it that Ram meditated here after killing a Brahmin, we all know as Ravan. Situated just above the confluence of 
+the rivers Bhagirathi and Alaknanda, the deceptively simple yet distinct rocky-textured, off-white facade of the
+ temple catches your attention. Walk through the temple compound and immerse in the spiritual force emanating from
+ the place.</p>
+
+<p class="h">Drive down to Rishikesh for lunch. In the evening get ready for a Kathak performance showcasing an episode from the legend of Shiva and Ganga, by a dancer par excellence. The story of Ganga – the descent from the heavens and meandering journey along the plains – will be retold through bhav abhinay set to the classic composition in praise of Ganga by Adi Shankaracharya, Jagganath Das Ratnakar and other great poets.
+</p>
+<p class="h">Spend the night at Rishikesh.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 3 - Goa</b></p>
+
+<p>After breakfast enjoy the drive through rural Goa as we head out into the highlands of the Western Ghats. A Spice Plantation walking tour is one of the highlights of this journey as we see cardamom, cinnamon, nutmeg, betel nut and many other spices that play a significant part in the region’s culinary tradition.
+
+Post this tour, we drive to a small town away from the coast for a Catholic meal with a family. Savour the architecture of the restored property, visit a nearby church, walk around generally to soak in the atmosphere, before settling down for a multi-course meal.
+
+Post lunch, we head out for a heritage walk in Panjim’s Latin Quarter, followed by dinner comprising Hindu Goan dishes.
+
+Overnight at Goa.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 4 - Goa - Karwar - Return Back</b></p>
+<p>After breakfast at the hotel and we head out for Karwar in Karnataka. Chef Smita Deo will rustle up a home cooked meal along with a cooking demonstration at a Karwari residence. She’ll also talk about the subtle differences between Maharashtra, Goa and Karnataka versions of Konkan.
+
+Tour ends post lunch.</p>
+</div>
+</div>
+
+
+
+<p><u><h3>
+Inclusions:</h3> </u></p>
+
+<ul>
+<li>Inland travel by AC Coach or equivalent.</li>
+<li>Accommodation at resort and five star properties on twin sharing basis</li>
+<li>All meals</li>
+<li>Guided visits to the sites and local transfers for the group</li>
+<li>Guided culinary trail and cooking session with chef and cookbook author Smita Deo</li>
+</ul>
+<h3><u>Tour Price does not include:</u></h3>
+<li>Expenses of personal nature like tips, phone calls, laundry etc.
+<li>Monument and Camera fee wherever applicable.
+<li>Travel charges to the Tour start location in Mumbai
+<li>GST at 5% will be applicable extra
+<h3><u>Cost</u></h3>
+<p>Rs 43,999 Per Person + GST (Twin sharing)</p>
+<h3><u>Contact</u></h3>
+<p>Tel: 8210424768/9460071213</p><p> connect.amt@gmail.com</p>
+
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="d1.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d2.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d3.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d4.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d5.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="d6.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d7.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d8.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d9.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d10.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d11.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d12.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-4"> <img src="d13.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d14.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d15.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email: connect.amt@gmail.com </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768/9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>

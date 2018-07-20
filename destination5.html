@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+font-size:20px;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+width:100vw;
+height:100vh;
+
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="DS7.jpg"    height=800px width=1900px">
+  <img class="mySlides" src="DS9.jpg"   height=800px width=1900px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+22nd to 25th Nov 2018
+<p style="font-size:25px"><b>MAGIC OF THE SILK ROUTE </b>
+
+<p class="h">   
+Think of caravans laden with wares that traversed from eastern China all the way to Europe, think of the deserts, oases and highlands of Central Asia, think of the ideas exchanged, adapted and refined! Few routes worldwide can conjure the magic of the Silk Route, and few names are more evocative of this route than Samarkand and Bukhara, where one could hear groups of languages as distinct as Indo-European, Semitic, Sino-Tibetan, Turkic and Caucasian in its bustling bazaars over millennia. Where global religions such as Buddhism, Islam, Hinduism, Christianity and Judaism mingled and clashed!
+
+Join us as we journey through contemporary Uzbekistan, touching on places that have the footprints of conquerors such as Genghis Khan, Temur and Alexander, men of math and science such as Al Khorezmi (Algebra), Ibn Sena (medicine) and Ulug Begh (astronomy). A land of magnificent architecture, dazzling blue pottery, fascinating Uzbek ikat, tangible Russian influence, and from an Indian perspective the land from where the first Mughal – Babur came.
+
+</p>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-lg-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - BORIS ANATOLIEVICH GOLENDER</p>
+<p style="font-size:20px">Boris Anatolievich Golender has authored several books and hosted the popular local folklore program: "My Street ..." on Uzbek television. He worked as an editor of the State Publishing House of Literature and Art (named after Gafur Gulyam), and in the magazine "The Star of the East" of the Union of Writers of Uzbekistan.
+
+He has published seven books, including "The Window to the Past" (Moscow, 2002), "My Gentlemen from Tashkent" (Tashkent, 2007), "In this City of Stone and Sun" (Tashkent, 2001), "Polonia Turkestaniana" (Tashkent, 2014), and published about 300 magazine and newspaper articles in the press of Uzbekistan and other countries. His literary works are mainly devoted to the history and culture of Central Asia. As a professional editor, he has edited a significant number of works of art, popular science and educational literature published in Uzbekistan in recent decades.
+
+</p>
+
+ 
+</div>
+<div class="col-lg-5">
+<img src="BORIS.jpg" 
+alt="photo" width=400px height=400px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - Ex Delhi</p>
+<p><em>Date: 22nd to 25th Nov 2018 (3 Nights/4 Days)</em></p>
+<p class="h"><b>Day 1 - Delhi - Tashkent</b></p>
+<p>
+
+After the hotel check-in, we set out into one of the oldest and largest cities in Central Asia, the Uzbek capital since 1930 and very much a showpiece of Soviet architecture and town planning. As we travel through Tashkent, we also see the emergence of an independent Uzbekistan. Our journey begins late in the afternoon with a visit to the old town comprising Barak Khana Seminary, Tila Shaikh mosque and their archives, known for a rare copy of the Koran written by the third Caliph Osman. Later we continue to Chorsu bazaar, the oldest market in Tashkent and an important stop on the Silk Route, and Kukeldash Madrassah and the Cathedral of the Assumption of the Virgin, a Russian Orthodox Church with its onion domes.
+
+In the evening orientation city tour by bus we visit: Mustakillik Square (Independence Square), Amir Temur square – heart of Tashkent, and Alisher Navoiy Theater square with its fountains.
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">DAY 2 - Tashkent - Bukhara </b>
+<p class="h"> After a buffet breakfast, we take the morning train to Bukhara.
+
+Upon arrival we check-in to Bukhara’s magical old quarter.
+
+This incredible city, one of the most famous names on the Silk Route, is home to hundreds of registered monuments. The old quarter where we’d be staying is a magical throwback to a medieval time, albeit with all creature comforts. Look around – they're literally everywhere. A walker’s paradise, the old quarter houses: Lab-i-khauz ensemble – the modern centre of traditional Uzbekistan, madrassah Nadirkhon Devanbegi, Khanaga, Mogaki Attari mosque, Poi Kalon minaret and mosque, Madrassahs Aziz Khan and Ulugbek.
+
+</p>
+
+<p class="h">We will also visit Hunarmand UNDP assisted workshops near Lab-i-khauz. We see block printing, metal chasing, suzani embroidery, carving and miniature painting.
+
+Overnight at Hotel</p>
+
+
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 3 - Bukhara</b></p>
+
+<p class="h">
+
+Continue sightseeing of Bukhara with an out-of-town excursion to visit the Sitora-i-Mokhikhosa, the summer residence of the former emir of Bukhara where you can see a unique mixture of traditional Russian style of architecture harmoniously mixed with local oriental traditions. The famous white hall decorated with carved alabaster resembles halls in Peterhof Palace in the suburb of St Petersburg.
+
+After lunch visit Ark Fortress, Bala Hauz mosque, mausoleum of Ismail Samanid, and Chashma Ayub.
+
+Overnight at Hotel
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 4 - Bukhara - Samarkand</b></p>
+<p class="h">
+After breakfast we head out to Baha-ud-Din Naqshband Bukhari Mausoleum – a famous Sufi spiritual leader of this region in 14th century. His cult was highly venerated among common folk. The rulers, too, paid considerable attention to this architectural ensemble!
+
+We later drive to Samarkand. En route we visit the house of famous potter Alisher at Gijduvan. We see all the processes of pottery making. Gijduvan pottery is famous for unique coloration and techniques.
+
+Lunch with a potter’s family of Alisher Nazrullayev + master classes of bread baking and shashlyk cooking.
+
+</p><p>Upon arrival at Samarkand we check-in to hotel and rest.</p>
+
+<p>Dinner at local restaurant.</p>
+
+<p>Overnight at hotel</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 5 - Samarkand</b></p>
+<p class="h">
+No name is as evocative of the Silk Road as Samarkand. It is one of the oldest existing cities in the world and the oldest of Central Asia. Built around the site of ancient Afrosiab, which dated from the around 4th millennium BCE, Samarkand was known to the ancient Greeks as Marakanda. Ruins of the old settlement remain north of the present city. It was plundered by Genghis Khan, before Temur rebuilt a new city which became the celebrated Samarkand.
+
+</p><p>We begin a full day tour of Samarkand to see the famous Registan Square, which was for many centuries, the heart of Samarkand. See the three beautiful madrassahs: the Ulug-Bek Madrasah built in the fifteenth century; the Tillya-Kori Madrasah built in the seventeenth century; the Sher-Dor Madrasah, also built in the seventeenth century. Visit Gur Emir - mausoleum of Temur or Tamerlane (as he was known in the West). Later see one of the grandest structure of Temur’s times - the chief Friday Mosque called Bibi-Khanum, the Silk Road bazaar and Shah-i-Zinda necropolis.
+
+</p><p>Also, visit wine tasting centre at the Central Asia's oldest Hovrenko winery to taste genuine Samarkand wines and brandies. The winery is among one of the outstanding sites of Samarkand.
+
+</p><p>Overnight at Hotel</p>
+
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 6 - Samarkand - Tashkent</b></p>
+<p class="h">
+Today we continue exploring Samarkand to visit Ulug-Bek’s observatory, constructed by Ulugbek – the grandson of Temur an astronomer-king, in 1428-1429. Visit the ancient settlement of Afrosiab, which is situated on the spurs of Chupan-Ata hills to the north-east of present-day Samarkand. According to the legend, it was here, on the banks of the river Siab, that the Turanian king and hero Afrosiab, a character of the folk epic ‘Shahnama’, founded the town that became the capital of Sogdiana.
+
+</p><p>Later we visit Konigil village (10 km from Samarkand) to see the paper-making workshop. Samarkand along with Damascus and Baghdad are known to produce the finest paper for calligraphy. For a long time Samarkand has been famous as a center of a high-quality paper manufacture. In the workshop of a talented master you will see how the rind of the mulberry tree turns into a paper. Here you will be able to take part in the unique process of hand-made paper production: cleaning tree branches from the bark, polishing paper with a stone and painting it.
+
+</p><p>Return to Samarkand and transfer to the railway station to catch your train to Tashkent. Upon arrival meet and transfer to the hotel.
+
+</p><p>Overnight at Hotel</p>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 7 - Tashkent - Fergana</b></p>
+<p class="h">
+This is a particularly interesting leg for Indians, as we head into Ferghana Valley – the original home of the first Mughal Babur.
+
+</p><p>We head out to Kokand by road. See the fascinating Chatkal mountains en route.
+
+</p><p>On arrival in Kokand we visit Khudayar Khan Palace, Jommi Mosque, Narbutabey and Dasturkhanchi Madrassah, Royal Cemetery and Khaidarov Workshop (museum of Kokand woodcraft).
+
+</p><p>Later drive to Rishtan – a center of unique ceramic production in Uzbkekistan. Rishtan is known today as the city of foremen, one of the largest in Central Asia to manufacture unique glazed ceramic. Rishtan artisans have become famous all over the world for their ceramics production technology. Their distinctive blue and green work shines in the sun, and every third family in Rishtan produces pottery. All works are unique.
+
+</p><p>We will visit the creative workshop of Rustam Usmanov, a famous master of blue ceramics in Rishtan. The mastery of his beautiful paintings and the richness of their pattern themes give a unique, hard-to-reproduce character to each of his works. They are some of the best pieces of Uzbekistan's decorative art. Here you will have an opportunity to see the master class of ceramic production and to create some pieces on your own.
+
+</p><p>Continue to Fergana town for overnight stay.</p>
+
+<p>Overnight at Hotel</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 8 - Margilan - Fergana</b></p>
+<p class="h">
+Morning we proceed to Margilan (located 12 km from Fergana). Margilan has been famous for its wonderful and fine silks. Via the Great Silk Road traders brought Marghilanian silk to Baghdad, Cairo and Athens. It is still the most important silk production center in Uzbekistan.
+
+</p><p>Today we will visit a workshop where original handmade methods of silk ikat production are still used. This is one of the best places that Ikat weaving still survives as in the old days. We will visit Yodigarlik silk processing factory and Saidahmad Hoja Ehsan Madrasa where famous velvet ikat, adrasikat, silk rugs and block print masters are still working like in the old days. Visit a vivid, chaotic local market in Margilan.
+
+</p><p>After lunch continue the way to Andijan. Upon arrival in Andijan visit Babur park and museum about the history and life of the Babur.
+
+</p><p>Transfer to the railway station to take train to Tashkent. On arrival meet the group and transfer to the hotel.
+
+</p><p>Overnight at Hotel</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 9 -Return Back </b></p>
+<p class="h">
+After breakfast at hotel check-out and transfer to the airport for the departure flight to Delhi.
+
+</p><p>Tour ends.</p>
+</div>
+</div>
+
+<p><u><h3>
+Inclusions:</h3> </u></p>
+
+<ul>
+<li>International flights Delhi/Tashkent/Delhi in economy class</li>
+<li>Accommodation with breakfast in the stated hotels on twin sharing basis</li>
+<li>Meals: Full Board/All Meals (Breakfast/Lunch/Dinner)</li>
+<li>Mineral water 1L per person daily</li>
+<li>Comfortable AC transport: AC Sedan cars (3 pax per car) on Day-7 for crossing mountain pass</li>
+<li>Professional English speaking escort guide</li>
+<li>Professor assistance for the entire tour</li>
+<li>Entrance fees to the monuments</li>
+<li>Uzbekistan visa support and fee</li>
+<li>Tashkent - Bukhara “Afrosiyob train”- 2nd class</li>
+<li>Samarkand - Tashkent “Afrosiyob train”- 2nd class</li>
+<li>Andijan - Tashkent “Uzbekistan train”- 1st class</li>
+</ul>
+
+<p><u><h3>
+Exclusions:</h3> </u></p>
+<ul>
+<li>Tips for guide (3$ per person per day) and driver (3$ per person per day)</li>
+<li>Expenditure of a personal nature</li>
+<li>Telephone calls, drinks, laundry etc.</li>
+<li>Travel/Medical insurance</li>
+<li>Any other item not mentioned in inclusions</li>
+</ul>
+
+
+
+
+<h3><u>Cost</u></h3>
+<p>Rs 1,49,999 Per Person + GST (Twin sharing)</p>
+<h3><u>Contact</u></h3>
+<p>Tel: 8210424768 / 9460071213 </p><p>Email:connect.amt@gmail.com</p>
+
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="DS1.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="DS2.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="DS3.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="DS4.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="DS5.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="DS6.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="DS7.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="DS8.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="DS9.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="DS10.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="DS11.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="DS12.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-4"> <img src="DS13.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="DS14.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="DS15.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email: connect.amt@gmail.com </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768 / 9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+font-size:20px;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+width:100vw;
+height:100vh;
+
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="b.jpg" style=1000px height=1000px">
+  <img class="mySlides" src="c.jpg" style=1000px height=1000px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+23rd to 29th September 2018
+<p style="font-size:25px"><b>THE RIVER SUTRA </b>
+<p class="h.jpg">A journey down the Ganga with Pushpesh Pant
+The Ganga is a river of myriad moods and mythic memories that rushes turbulently from its source in the Himalaya to meander through the plains as its flows to meet the sea. Considered the most sacred river in India, it has been a life sustaining river for millions. It has shared theirs joys and sorrows for millennia. And has been witness to the unravelling of human drama that is enacted along its banks.
+
+As we travel down the Ganga from Devprayag to Varanasi, the river invites us to follow the stream of consciousness – the river that flows within. This journey is conceived as a voyage in time and space blending the physical with the metaphysical.
+
+Ganga has inspired poets and painters, seekers and scholars, dancers and musicians. It has cast a spell on the human mind more than any other river in the world. For millions of Indians, both religious and otherwise, she is simply the Mother who nourishes and inspires.
+
+Come join this journey with Pushpesh Pant as we gently travel down the Ganga.<p>
+
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-lg-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - PUSHPESH PANT</p>
+<p style="font-size:20px">Sometime teacher, social historian, author of best-selling books,
+ bi-lingual columnist, TV anchor, independent producer of documentaries, gastronome and travel
+ writer, Pushpesh Pant wears many hats rather effortlessly. For the past quarter century he has 
+ single-mindedly pursued his passion for discovering his cultural roots. This has taken him on 
+ and off the beaten track on exhilarating journeys into forests and along rivers big and small.
+ Most of his time is spent curating experiential yatras for like-minded fellow travellers, rasikas
+ and jigyasus.
+
+He was awarded the Padma Shri in 2016.</p>
+
+ </p>
+</div>
+<div class="col-lg-5">
+<img src="ex.jpg" alt="photo" width=400px height=400px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - Ex Delhi</p>
+<p><em>Date: 23rd to 29th September 2018 (6 Nights/7 Days)</em></p>
+<p class="h"><b>Day 1 - Delhi - Devprayag</b></p>
+We take the early morning Shatabdi Express from Delhi to Haridwar. Get down at Haridwar and
+ start on a road journey to Devprayag with lunch en route. The river keeps <span style="padding-left:5px;">us</span> company as we 
+ drive up to Devprayag – the confluence of Bhagirathi and Alaknanda. One of the most iconic 
+ prayags (confluence) in India, this is the place from where the river takes the name Ganga.
+ View the river from the resort and set the tone for an epic journey down its banks.
+
+Spend night at Devprayag.
+
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">DAY 2 - Devprayag - Rishikesh </b>
+<p class="h">Post breakfast visit the Prayag and Raghunathji temple. Walk across a suspended bridge and through very narrow 
+lanes of an ancient town to reach the prayag, where the two distinctly different coloured waters of Bhagirathi 
+and Alaknanda meet. Feel the frenetic journey the river goes through crashing against mountains, twisting and turning,
+ taking several bends, finally culminating into an impassioned roar at the very confluence. Right at the confluence you
+ will see a statue of Goddess Ganga gleaming as a protector, nurturer; her strong presence being resonated where the
+ two rivers meet and shape up the mighty and sacred river Ganga. Observe the holy men in sundry hues of saffron,
+ tourists and the locals performing rites of penance while Pushpesh Pant weaves his magical tapestry through stories 
+ from history, mythology and folklore.</p>
+
+<p class="h">Legend has it that Ram meditated here after killing a Brahmin, we all know as Ravan. Situated just above the confluence of 
+the rivers Bhagirathi and Alaknanda, the deceptively simple yet distinct rocky-textured, off-white facade of the
+ temple catches your attention. Walk through the temple compound and immerse in the spiritual force emanating from
+ the place.</p>
+
+<p class="h">Drive down to Rishikesh for lunch. In the evening get ready for a Kathak performance showcasing an episode from the legend of Shiva and Ganga, by a dancer par excellence. The story of Ganga – the descent from the heavens and meandering journey along the plains – will be retold through bhav abhinay set to the classic composition in praise of Ganga by Adi Shankaracharya, Jagganath Das Ratnakar and other great poets.
+</p>
+<p class="h">Spend the night at Rishikesh.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 3 - Rishikesh - Haridwar </b></p>
+
+<p>The day starts with an early morning session of yoga. A walk through the city awaits as we explore the town of Rishikesh visiting sites like Laxman Jhula, the Sivananda ashram and generally soaking in the atmospherics of a place that attracts visitors for myriad reasons from religious significance and spiritual quest, to yoga and adventure among others. After breakfast we set off for Haridwar. Lunch at Haridwar. Watch the Ganga aarti at Haridwar, a place of great sanctity commemorated in ancient text and a site of the Kumbh Mela (the largest congregation of humanity at one place at the same time).
+
+Enjoy an evening of devotional music at the hotel or simply enjoy watching the river flow by in Haridwar from close quarters.
+
+Spend the night at Haridwar.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 4 - Haridwar/Lucknow - Allahabad  </b></p>
+<p>Wake up the next morning and spend a leisurely day walking along the river banks, shopping in its bustling streets for puja items, rudraksh, souvenirs and traditional sweets. Or visit one of the nearby temples. Post breakfast transfer to Jolly Grant airport to board flight to Lucknow, and upon arrival drive to Allahabad.
+
+Overnight in Allahabad.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 5 - Allahabad - Varanasi </b></p>
+<p>Start early for Sangam - the site of Maha Kumbh Mela considered the holiest of prayags. A very significant place as three of the most sacred Indian rivers Ganga, Yamuna and Saraswati meet here, the confluence is also known as Triveni. Post that we set out for Chunar fort in the morning. Chunar, the site of a beautiful fort set atop Adri hill, gives you magnificent views of a sprawling Ganga of the plains in sharp contrast to the turbulent river in Devprayag. The vantage position, the relatively less visited fort, gives ample scope for quietude to soak in one of the grandest views of the river. Post lunch we take a boat down the Ganga to Varanasi to experience slow travel. Reach Varanasi by evening just in time for the famous Ganga aarti. Be a witness to the grand spectacle of humanity as collective chants, huge fire lamps glowing in the dark, the sweet smell of incense and a shared sense of spirit, stirs emotions within.
+
+Spend the night at Varanasi.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p> <b>DAY 6 - Varanasi </b></p>
+<p>Embark on an early morning boat ride. This is one of the highpoint of the Ganga experience as you see and experience the essence of the Eternal City, the City of Light, the City of Lord Shiva, the City of Goddess Annapurna, the City of dance and music, and the City of Kabir. Explore Varanasi – the oldest continuously inhabited city known to man – by walking along the renowned ghats between Assi and Manikarnika. It is an experience that has left an indelible mark on many a great soul – believer and agnostic alike – from the world over.
+
+Post sunset savor the traditional cuisine of Varanasi at a grand get together, as we strive to bring the city’s unique culinary tradition alive.
+
+Spend the night at Varanasi.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 7 - Return Back </b></p>
+<p>Head out for respective destinations after breakfast.
+</p>
+<p>Tour ends.</p>
+<p><u><h3>
+Inclusions:</h3> </u></p>
+
+<ul>
+<li>All meals</li>
+<li>All transfers as per the itinerary.</li>
+<li>Delhi / Haridwar train in AC Chair Car.</li>
+<li>Dehradun to Lucknow by flight, and further onto Allahabad by road.</li>
+<li>Accommodation at resort, heritage, four star properties for 6 nights a per the program.</li>
+<li>Guided visits to the sites and local transfers for the group.</li>
+<li>Guided session with Professor Pushpesh Pant, a Padma Shri recipient in 2016.</li>
+<li>Travel charges to Ganges Tour start location Delhi.</li>
+</ul>
+<p> <u> <h3>Exclusions:</b></u></h3>
+<ul>
+<li>Expenses of personal nature like tips, phone calls, laundry etc.</li>
+<li>Monument and Camera fee wherever applicable.</li>
+<li>Travel / Medical Insurance</li>
+<li>GST 5% will be extra</li>
+<li>Cost
+Rs 74,999 Per Person + GST (Twin Sharing)</li>
+
+
+</ul>
+<h3><u>
+Contact</u></h3>
+<p>Tel: 8210424768/9460071213</p> 
+<p>Email: connect.amt@gmail.com</p>
+
+ 
+</p>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="11.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="12.jpg" alt="photo" width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="13.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="15.jpg" alt="photo" width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="17.jpg" alt="photo" width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="18.jpg" alt="photo" width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="19.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="20.jpg" alt="photo" width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="21.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="23.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="24.jpg" alt="photo" width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="25.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-4"> <img src="27.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="28.jpg" alt="photo" width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="29.jpg" alt="photo" width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email: connect.amt@gmail.com </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768/9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>

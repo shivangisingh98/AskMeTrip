@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+font-family:candara;
+font-size:20px;
+
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="d44.jpg"    height=800px width=1900px">
+  <img class="mySlides" src="d46.jpg"   height=800px width=1900px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+22nd to 25th Nov 2018
+<p style="font-size:25px"><b>WW I – INDIA ON THE WESTERN FRONT</b>
+<h3>Journey from an Indian soldier’s perspective</h3>
+<p class="h">
+During the First World War nearly 150,000 Indians served on the battlefields in Europe. Their stories of hardship and heroism can be encountered everywhere in the beautiful landscape of Belgium and France. This journey follows in the footsteps of heroes such as Khudadad Khan, the first Indian winner of a Victoria Cross (VC), Darwan Singh Negi who won his VC on the same day as Khudadad Khan, Mir Dast who - despite being the brother of an infamous deserter – was awarded the VC for rescuing 8 officers under heavy fire and saving the remainder of his regiment, and Gabbar Singh Negi – in whose memory a fair is held annually held in Chamba. Besides taking in the largest Commonwealth War Cemetery in the world and more than ten Indian memorials and burial grounds, exclusive visits have been arranged to a barn that served as an Indian hospital ward and to a private collector specialized in the Indian Army on the Western Front. Participants will also take part in the Last Post Ceremony, a moving act of remembrance to the casualties of the First World War which daily draws hundreds of visitors to the Menin Gate Memorial to the Missing. The hotels are located in the historical and picturesque cities of Arras and Ypres, both destroyed during the First World War but faithfully reconstructed to their former medieval glory.
+
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-lg-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - DOMINIEK DENDOOVEN</p>
+<p style="font-size:20px">Dominiek Dendooven is a historian of the First World War, a researcher at the award winning In Flanders Fields Museum in Ypres, Belgium, and teaches history of the First World War at university. His field of research is the non-European presence on the Western front. His expertise on the Indian Army in the First World War has brought him a number of times to India for conferences, lectures, and exhibitions. Dominiek has written several books.
+
+
+ </p>
+</div>
+<div class="col-lg-5">
+<img src="dom.jpg" 
+alt="photo" width=400px height=400px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - Ex DELHI</p>
+<p><em>To be announced</em></p>
+<p class="h"><b>Day 1 - Delhi - Brussels</b></p>
+<p>
+Arrival at Brussels airport
+
+After check-in we set out for a city tour of Brussels with highlights of Brussels such as The Atomium, Royal Palace of Laeken, the EU district, Art Nouveau mansions, the Grand Palace, the houses of Parliament, the iconic statue of Manneken Pis.
+
+Dinner - 3 course menu - and night at hotel Marivaux****
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">DAY 2 - Brussels - Ypres </b>
+<p class="h">After a buffet breakfast, we depart Brussels for Ypres. En route we visit Zonnebeke and the Polygon Wood Cemetery, a strategic point on the road to Ypres. Upon arrival at Ypres – one of the epicenter of the War – we visit Tyne Cot Cemetery in Passchendaele, the largest military cemetery of the Commonwealth in the world, and the strikingly different German Cemetery of Langemarck, with 44,000 burials – a grim reminder of the cost of war.</p>
+
+
+
+<p class="h">Post lunch we visit the Menin Gate Indian Forces Memorial. Unveiled in a ceremony in March 2011, it is dedicated to the 130,000 troops of the Indian Forces who served in Flanders during the Great War of 1914-1918. 9,000 members of the Indian Expeditionary Force died as casualties in France and Flanders, not only due to the nature of their injuries in battle but also due to the severe winter weather conditions they were exposed to.
+</p>
+<p class="h">A visit to the award-winning In Flanders Fields Museum follows. Housed in the stunning medieval Cloth Hall building, the museum now offers the perfect introduction to the First World War in Flanders and France. The day ends with a visit of Essex Farm, where the famous poem “In Flanders Fields” was written.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p ><b>DAY 3 - Ypres</b></p>
+
+<p class="h">
+After a buffet breakfast, we head out for the beautifully landscaped Bedford House Cemetery, which includes an Indian plot. This is followed with a visit the Indian Memorial in Hollebeke, with the story of Khudadad Khan (first Indian recipient of the Victoria Cross by an Indian). In the nearby town of Poperinghe we are introduced to a hospital site of the First World War and we visit the place where those ‘shot at dawn’ were detained and executed. The authentic execution pole, located in the inner courtyard of the town hall, is a painful reminder of the fate which awaited many so-called ‘deserters’ during the Great War. Most of these frightened men were suffering from shell shock. Soldiers, who were sometimes bombarded for days on end, became near senseless and simply did not know what they were doing. Instead of receiving compassion and understanding, a terrifying example was made of them. The condemned men spent their last night in the death cell before being shot at dawn on the courtyard.
+
+</p>
+<p class="h"> Lunch at own arrangements in Poperinge
+
+Post lunch we visit the British Cemetery in Reningelst, and later visit the Indian Memorial in Hollebeke, with the story of Khudadad Khan (first Indian recipient of the Victoria Cross by an Indian).
+
+Transfer to Diksmuide and visit of the Trench of Death and Ypres Tower Peace Monument.
+
+Back to Ypres</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 4 - Ypres - Neuve Chapelle</b></p>
+<p class="h">After breakfast at the hotel and we head out for Karwar in Karnataka. Chef Smita Deo will rustle up a home cooked meal along with a cooking demonstration at a Karwari residence. She’ll also talk about the subtle differences between Maharashtra, Goa and Karnataka versions of Konkan.
+
+<p class="h">Tour ends post lunch.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 5 - Arras</b></p>
+<p class="h"> 
+After a buffet breakfast, we head out for the final day on the battlefields of the First World War to Cambrai and Somme.
+
+At Villers-Guislain, a brand new Indian Memorial, unveiled in December 2017, commemorates the Indian cavalry who fought the Germans here one hundred years ago. We then proceed to Péronne where the Historial de la Grande Guerre, housed in a medieval castle, offers an overview of the uniforms and weaponry used in the battle of the Somme. On the outskirts of that town we visit La Chapelette British & Indian Cemetery with many graves of the little known Indian Labour Corps. Our tour of the Somme battlefield takes in major sights such as the Lochnagar Crater, the vast Thiepval Memorial to the missing and the jump-off line cemeteries at Serre before ending at the hard-to-find Ayette Indian and Chinese Cemetery.
+
+Drive back to Arras.
+
+Dinner and night at the hotel</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 6 - Paris</b></p>
+<p class="h"> 
+After a buffet breakfast, check out and transfer to Paris. We arrive in Paris by 11 am, and hop on to a city tour of Paris which includes Sacré-Cœur Basilica (walking tour), the new Philharmonie de Paris, Mitterand University Library neighbourhood.
+
+Lunch at leisure en route.
+
+The tour in the second half includes Place d'Italie, Seine left bank, the island of Ilé de la Cité, Louvre (from outside), Les Halles, Place Vendôme, Concorde, Champs Elysées, Bois de Boulogne, Tour Eiffel.
+
+Check-in at hotel Novotel City Centre Tour Eiffel****
+
+Dinner and night at the hotel</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>DAY 7 - Return Back</b></p>
+<p class="h"> 
+After a buffet breakfast, we transfer with the assistance of our tour guide to Paris airport.</p>
+
+<p class="h">Tour ends.</p>
+</div>
+</div>
+
+
+
+<p><u><h3>
+Inclusions:</h3> </u></p>
+
+<ul>
+<li>Flight tickets</li>
+<li>Accommodation in superior 3* and 4* hotels</li>
+<li>Half board – breakfast and dinner (drinks not included)</li>
+<li>Transport</li>
+<li>Transfers and excursions by luxury coach 30 seats</li>
+<li>Entrance fees according program</li>
+<li>City taxes</li>
+</ul>
+<h3><u>Tour Price does not include:</u></h3>
+<li>Expenses of personal nature like tips, phone calls, laundry etc.
+<li>Monument and Camera fee wherever applicable.
+<li>Travel charges to the Tour start location in Mumbai
+<li>GST at 5% will be applicable extra
+<h3><u>Cost</u></h3>
+<p>Rs 159,999 Per Person + GST (Twin sharing)</p>
+<h3><u>Contact</u></h3>
+<p>Tel: 8210424768/9460071213</p><p> Email: connect.amt@gmail.com</p>
+
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="d41.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d42.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d43.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d44.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d45.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="d46.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d47.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d48.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d49.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="d50.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="d51.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="d52.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email: connect.amt@gmail.com </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768/9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px;background:none;">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>

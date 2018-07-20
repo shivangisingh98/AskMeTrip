@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destination</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<style>
+body{
+justify-content:center;
+font-family:candara;
+}
+.mySlides {display:none;}
+
+.container-fluid{
+background-color:grey;
+margin:50px 50px 50px 50px;
+padding:10px 10px 10px 10px;
+}
+.row{
+margin:20px 20px 20px 20px;
+padding:10px 10px 10px 10px;
+
+}
+.col2{
+border:2px solid black;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+.mytext{
+width:500px;}
+#l{
+color:white;
+}
+.h{
+font-size=20px;}
+body{
+justify-content:center;
+font-family:candara;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.container-fluid1{
+background-color:black;
+margin:50px 50px 50px 50px;
+padding:10px 250px 10px 250px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+font-family:candara;
+font-size:20px;
+
+}
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".chiku").hide();
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div class="chiku">
+<div class="container-full">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="aboutus.html">About us </a>
+  <a href="contactus.html">Contact us</a>
+  
+</div>
+<div class="container-full" style="margin:0px 0px 0px 0px">
+<img src ="Logo.png" alt="logo" width=100px height=100px>
+<span style="font-size:30px;padding:20px 100px 20px 20px;cursor:pointer;float:right;" 
+onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:1500px ; margin:0px 0px 0px 0px">
+ <div class="container"> 
+ 
+ <button class="btn" id="a"><b> Submit Query </b> </button>
+ </div>
+  <img class="mySlides" src="df7.jpg"    height=800px width=1900px">
+  <img class="mySlides" src="df9.jpg"   height=800px width=1900px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-12">
+08th to 15th Jul 2018
+<p style="font-size:25px"><b>LADAKH THROUGH THE LENS</b>
+
+<p class="h">  
+An enthralling canvas of colour and dramatic contrasts - Ladakh is a photographer’s dream come true. A place where the landscape encompasses the word surreal, where nature is as yet unconquered, and human inhabitants seem to have a deep connect with the other world. Romance, spirituality, and drama come together in this land of high mountain and passes, that is famed for its unparalleled beauty and hidden depths.
+
+</p><p>May to September is when Ladakh drops its frigid demeanour and opens itself to the world. A time when photography enthusiasts can explore the natural splendours of the place and catch its aesthetic delights within their hungry frames. It is not every day you get an opportunity to capture star-trails, dramatic landscapes, monasteries on searing hill-tops, world’s highest passes, and a culture so unique and ancient.
+
+</p><p>Led by Dheeraj Paul, discover this land of the lamas solely from an expert photographer’s perspective. Vantage locations, exclusively planned shoots, time-lapse videos, and more. This photo learning opportunity promises you an experience like no other.
+
+
+</p>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:grey" style="padding:20px 20px 20px 50px">
+<div class="row" >
+<div class="col-lg-7" style="padding:20px 20px 20px 50px">
+<p style="font-size:30px"> EXPERT - DHEERAJ PAUL</p>
+<p style="font-size:20px">
+
+Hailing from a family of brilliant photographers, Dheeraj Paul learnt the ropes from father S. Paul, one of the doyens of photo journalism in India. A versatile photographer with over two decades in the profession, he specializes in travel, food, architecture and fine-art photography. He is one the brand ambassadors for Sony Alpha professional camera equipment. A multiple award winner at the global level, he has featured in over 30 books on various subject including ‘Around India’s First Table: Dining and Entertaining at the Rashtrapati Bhavan’, ‘ The Golden Temple - A Gift to Humanity’ among others.
+
+ </p>
+</div>
+<div class="col-lg-5">
+<img src="dhe.jpg" 
+alt="photo" width=400px height=400px>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p> 
+Itinerary - 7 Nights/8 Days</p>
+<p><em>Date: 08th to 15th Jul 2018</em></p>
+<p class="h"><b>Day 01 : 8 July 2018 (Sunday) Leh Arrival & Sightseeing (3505 meters / 11567 feet)</b></p>
+<p class="h">
+Arrive at the Kushok Bakula airport Leh, which is 3500m above sea level. Transfer to your hotel and enjoy a wholesome breakfast. You get half day for rest and acclimatization.
+
+</p><p>In the afternoon drive to the Leh Palace and spend some time there. The Leh Palace, built by King Sengge Namgyal in the 17th century, is modelled on the Potala Palace in Lhasa. The palace is nine storeys high, and the roof provides a panoramic view of Leh and the surrounding mountains. The Stok Kangri mountain in the Zangskar range is visible across the Indus valley to the south, while the Ladakh mountain range that rises behind the palace is visible to the north. The palace was structured to accommodate the royal family on the upper floors, while the lower floors were for stables and store rooms.
+
+</p><p>Next visit the Shanti Stupa - a Buddhist white-domed Stupa on a hilltop in Chanspa. It was built in 1991 as part of the Peace Pagoda mission, by Japanese Buddhist Bhikshu, Gyomyo Nakamura.
+
+</p><p>Later in the evening walk around the local market to buy regional items like Pashmina shawls, stoles, Tibetan handicrafts like prayer wheels, Buddhist masks and Thangka.
+
+</p><p>Savour dinner and stay overnight at the Hotel in Leh.</p>
+
+
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="h">
+<b class="h">Day 02: 9 July 2018 (Monday) Drive to Sham Valley & Alchi (70 km)</b>
+<p class="h">
+Relish breakfast at the hotel, and carry packed lunch for the day. Your first stop is the 1000-year old Alchi monastery, which is the only Gompa in Ladakh region that is built on flat ground. After that proceed to the Likir Monastery to visit the splendid three-storey Dharma Wheel Gompa. The massive Buddha statues here will leave you awestruck.
+
+</p><p class="h">Take in the breathtaking view of the Indus & Zanskar river sangam. As you drive along the Indus river, pay your respects at Pathar Sahib Gurdwara and drive up the Magnetic Hill (where cars defy gravity). Hike up to the clay-built Basgo Palace which is mainly in ruins, but offers a great view from the top. Driving on, you reach the Leh Hall of Fame (which has a museum of the Kargil War memorabilia).
+
+</p><p class="h">Return for your overnight stay to the hotel.
+</p>
+
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<p><b>Day 03: 10 July 2018 (Tuesday) Leh – Nubra (125 km /5-6 hrs ) via Khardungla Pass (18832 ft), Nubra Valley, Hundur & Sand Dunes</b></p>
+
+<p>
+After breakfast head out towards Nubra via Khardungla, which is claimed as the world’s highest motorable road at 18832 feet above sea level. At Khardungla pass take in the spectacular view of snow-capped peaks and mountains. The road then passes through a bridge, laid on a glacier, which finds mention in the Guinness Book of World Records.
+
+</p><p class="h">You pass through the beautiful Nubra valley which provides many photo opportunities. Nubra Valley is the oasis of Ladakh as you see lush greenery and flowering trees in this region. After you reach your camp at Hunder village, go to the white sand dunes, for some fun time Watch out for the two-humped Bactrian camels that can be sighted here.
+
+</p><p class="h">Stay overnight at the camp.
+
+
+
+</p>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>Day 05 : 12 July 2018 (Thursday) Nubra – Leh</b></p>
+<p class="h">
+After breakfast proceed to Leh via the 515-year old Diskit monastery, which is situated on a hill-top and provides a panoramic view of the valley below. Later walk around the town of Diskit which has a small village market. You will also see the giant Buddha statue the Chamba (Maitreya Buddha) that sits on a hill between Diskit Gompa and the main road. Proceed back to Leh, crossing the Khardungla Pass once again, and reach your hotel in Leh for your overnight stay.
+
+</p><p class="h">Overnight at Leh.
+
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>Day 06 : 13 July 2018 (Friday) Pangong Lake (155 km, 4-hour drive )</b></p>
+<p class="h">
+While driving towards Pangong Lake, visit Shey Palace the former summer palace of the King of Ladakh, and the Thiksey Monastery, located on a hillock with stunning views of the Indus valley. Thiksey is especially known for its gigantic seated statue of the Maitreya. It is also known for its (Dukhang) assembly hall which houses hundreds of rectangular prayer books, stacked between wooden covers and bound in silk.
+
+</p><p class="h">Continue the journey towards Pangong Lake, which at 14,270 feet (4,350 m), is the highest salt water lake in the world. We go through Changla pass at 5486 m (almost 18 000 ft), which is among the highest passes in the world. The Pangong Lake is about six to seven kilometres at its widest point, and over 130km long, and lies between India and China. The dramatic landscape of the place against the backdrop of the blue waters of the lake, will leave you spell-bound and the scene will remain etched in your memory forever.
+
+</p><p class="h">Stay over night in a camp near the lake.
+</p>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>Day 07 : 14 July 2018 (Saturday) Return to Leh</b></p>
+<p class="h">
+After enjoying the mesmeric sunrise over the Pangong Lake, drive back to Leh via the Hemis Monastery. This is the largest monastic institution in Ladakh. It belongs to the Drukpa lineage or the Dragon Order of Mahayana Buddhism, with His Holiness the Gyalwang Drukpa as its supreme spiritual head. Continue your journey, and reach the hotel for your overnight stay in Leh.
+</p>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<p><b>Day 08 :15 July 2018 (Sunday) Departure</b></p>
+<p class="h">
+You get dropped to the Leh Airport for your flight back to your own destination, as you revel in the beautiful memories of Ladakh.
+
+<h4>**Tour Ends**</h4>
+
+
+
+</p>
+</div>
+</div>
+
+<p><u><h3>
+Inclusions:</b> </u></h3>
+
+<ul>
+<li>Accommodation on Double Twin room with APAI plan (Breakfast + Lunch+ Dinner ).</li>
+<li>Transfer by Non Ac Innova /Xylo for whole tour as per itinerary.</li>
+<li>Environment fee, wild life & red cross fee.</li>
+<li>1 bottle package drinking water per person per day</li>
+<li>Every car have oxygen cylinder during Nubra & Pangong trip</li>
+<li>Guided photography sessions with leading travel, people and architecture photographer – Dheeraj Paul & the mentoring team
+</li><li>Regular analysis and image reviews through the tour</li>
+</ul>
+
+
+
+<h3><u>Tour Price does not include:</u></h3>
+<ul>
+<li>Any sightseeing or excursion that is not mentioned in the itinerary.</li>
+<li>Any item of personal requirement, such as drinks, laundry, telephone, etc.</li>
+<li>Any medical or evacuation expenses.</li>
+<li>Any type of insurance – personal, medical, travel etc..</li>
+<li>Any airfares.</li>
+<li>Any services not mentioned above</li>
+<li>5% GST extra</li>
+
+</ul>
+<h3><u>Cost</u></h3>
+<p>Rs 43,999 Per Person + GST (Twin sharing)</p>
+<h3><u>Contact</u></h3>
+<p>Tel: 8210424768 / 9460071213 </p><p>Email:connect.amt@gmail.com</p>
+
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-size:30px"><b>GALLERY</b> </p>
+<div class="row">
+
+<div class="col-sm-4"> <img src="df1.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="df2.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="df3.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="df4.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="df5.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-4">   <img src="df6.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="df7.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="df8.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="df9.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"> <img src="df10.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="df11.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="df12.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-4"> <img src="df13.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4"> <img src="df14.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4"> <img src="df15.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid1" id="b">
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="8.jpg" alt="photo" height=500px width=500px style="padding-right:30px">
+ </div>
+<div class="col-sm-6">
+<center><p style="font-size:30px;padding:20px 20px 20px 100px" id="l"> <b>ENQUIRE NOW </b></p></center>
+<p style="padding:10px 20px 10px 100px" id="l"> Email:connect.amt@gmail.com  </p>
+<p style="padding:10px 20px 10px 100px" id="l"> Phone: 8210424768 / 9460071213
+
+</p>
+<form style="padding:20px 20px 20px 50px;margin:20px 20px 20px 50px">
+<p > <input type="text" name="Name" placeholder="Name" class="mytext"></p><br>
+<p 
+> <input type="email" name="Email" placeholder="Email" class="mytext"></p><br>
+<p style="width=100px"> <input type="tel" name="Mobile" placeholder="Mobile" class="mytext"></p><br>
+
+<textarea name="message" placeholder="Message" value="Message" style=" height:100px" class="mytext" > Message</textarea><br>
+<p ><input type="Submit" name="Submit" style="background-color:red ; color:white;width:200px"><p>
+
+
+
+
+
+</form>
+
+
+
+
+ </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<b><pre style="padding:20px 20px 20px 100px; font-size:20px">HOME    CONTACT US </pre></b>
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("#b").show();
+    });
+});	
+</script>
+</body>
+</html>
