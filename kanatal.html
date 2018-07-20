@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+  integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" 
+  crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+p,ul{
+font-size:20px;
+}
+body{
+font-family:candara;
+}
+* {
+    box-sizing: border-box;
+}
+
+img.zoom {
+    width: 50px;
+    height: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(0.0); 
+    -moz-transform: scale(0.0);
+    -o-transform: scale(0.0);
+    transform: scale(1.2);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("dp.jpg") ;
+
+    /* Full height */
+    height: 1000px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<script>
+
+$(document).ready(function(){
+    $('.zoom').hover(function() {
+        $(this).addClass('transition');
+    }, function() {
+        $(this).removeClass('transition');
+    });
+});
+
+</script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".inc").click(function(){
+        $(".a").show();
+		$("abc").hide();
+    });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+    $(".det").click(function(){
+        $(".cf").show();
+		$("abc").hide();
+    });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+    $(".abt").click(function(){
+        $(".cd").show();
+		$("abc").hide();
+		
+    });
+});
+
+</script>
+
+</script>
+<script>
+$(document).ready(function(){
+    $(".pd").mouseover(function(){
+	
+        $(".pdf").show();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".call").mouseover(function(){
+	
+        $(".cal").show();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".pd").mouseout(function(){
+	
+        $(".pdf").hide();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".call").mouseout(function(){
+	
+        $(".cal").hide();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".inc").mouseover(function(){
+        $(".inc").css("background-color", "orange");
+    });
+    $(".inc").mouseout(function(){
+        $(".inc").css("background-color", "black");
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".abt").mouseover(function(){
+        $(".abt").css("background-color", "orange");
+    });
+    $(".abt").mouseout(function(){
+        $(".abt").css("background-color", "black");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".det").mouseover(function(){
+        $(".det").css("background-color", "orange");
+    });
+    $(".det").mouseout(function(){
+        $(".det").css("background-color", "black");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".ph").mouseover(function(){
+        $(".ph").css("background-color", "orange");
+    });
+    $(".ph").mouseout(function(){
+        $(".ph").css("background-color", "black");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".back").click(function(){
+	$(".cf").hide();
+	$("abc").show();
+        
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".back1").click(function(){
+	$(".a").hide();
+	$("abc").show();
+        
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".back2").click(function(){
+	$(".cd").hide();
+	$("abc").show();
+        
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".ph").click(function(){
+        $(".phot").show();
+		$("abc").hide();
+		
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".gay").click(function(){
+	
+	$("abc").show();
+	$(".phot").hide();
+        
+    });
+});
+
+</script>
+</head>
+<body>
+<div class="phot" style="display:none;">
+<div class="container-full bg">
+<button class="gay"
+style="background-color:black;color:white;margin-left:10px;
+font-size:15px;margin-top:10px;"> Click
+ here to go back</button>
+<div class="container-fluid">
+<p style="font-size:30px"><b>PHOTOS</b> </p>
+<br/>
+<br/>
+<div class="row">
+
+<div class="col-sm-3 zoom"> <img src="UKL01.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-3 zoom"> <img src="UKL02.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-3 zoom"> <img src="UKL03.jpg" alt="photo"   width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-3 zoom"> <img src="UKL04.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+
+
+
+</div>
+<br/>
+<br/>
+
+<div class="row">
+
+<div class="col-sm-3 zoom"> <img src="UKL05.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-3 zoom"> <img src="UKL06.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-3 zoom">   <img src="UKL07.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"></div>
+<div class="col-sm-3 zoom"> <img src="UKL03.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+
+
+</div>
+<br/>
+<br/>
+<!--<div class="row">
+
+<div class="col-sm-4 zoom"> <img src="UH09.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4 zoom"> <img src="UH10.jpg" alt="photo"  width=350px height=350px style="border:5px solid white">  </div>
+<div class="col-sm-4 zoom"> <img src="UH11.jpg" alt="photo"  width=350px height=350px style="border:5px solid white"> </div>
+<div class="col-sm-4 zoom"> <img src="UH12.jpg" alt="photo"   width=350px height=350px style="border:5px solid white">  </div>
+-->
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="cf" style="display:none;">
+<div class="container-full bg">
+<div class="container-full">
+
+<button class="back" style="background-color:black;color:white;font-size:15px;
+margin-top:10px;margin-left:10px;">Click here to go back</button>
+</div>
+<div class="container">
+<h1><b>Detailed  Itinerary:</b></h1>
+
+<h3><b>Day 1:</b></h3><p> Arrive at your pickup location our representative will welcome you. Drive to Kanatal Camp. Arrivals at campsite, Welcome drink (Non Alchoholic) on arrival Get freshen up and get your self-Acclimatized. Post Acclimatization, get ready for Adventurous Activities Rock climbing, Rappelling, Valley crossing, Burma Bridge etc. Return back to the camp till lunch. Post lunch free to play Ground Sports Activities or Indoor Games like Volley Ball, Football, Badminton, Cricket, Chess, Tambola and Carom etc. Evening at leisure & after sunset bonfire/campfire and bar-be-que snacks after bonfire Enjoy the dinner. Overnight stay in Luxury Tents on twin sharing basis.
+
+</p>
+<h3><b>Day 2:</b></h3><p> Morning Wake Up Call at 6:00 am. Morning Tea & snacks, trekking to acclimatize yourself. After Breakfast, Checkout from the Camp & drive to your destinations. On the way you may visit any of the nearby local attractions. This brings an end to the trip, head back with lots of happy
+ memories and moments that will be cherished for a lifetime. 
+</p>
+<h3><b><u>Safety</u></b></h3><p> 
+
+As far as the safety and security is concerned the camp is absolutely safe having sufficient staff and our experienced Team members working 24 hours with security guards in and around the camp. Area is free from any danger species of animals. All adventure activities are conducted with utmost care under guidance of professional instructors. All our instructors are having long experience in adventure activities.
+
+</p>
+
+</div>
+</div>
+</div>
+<div class="cd" style="display:none;">
+<div class="e" >
+<div class="container-full bg">
+<div class="container-full">
+
+<button class="back2" style="background-color:black;color:white;font-size:15px;
+margin-top:10px;margin-left:10px;">Click here to go back</button>
+</div>
+
+
+<div class="container" style="padding:20px 20px 20px 20px;">
+<h1><b>About the Place:</b></h1>
+
+<div class="row">
+<div class="col-sm-4">
+<img src="UKL02.jpg" alt="" height=180px width=300px></div>
+<div class="col-sm-8">
+<p>
+<b>Location: Kanatal</b> is a small village in the state of 
+<a href="">Uttarakhand</a>, India. <a href="">Kanatal</a> is 78 km from <a href="">Dehradun </a>
+(capital of the State Uttarakhand), 38 km from <a href=""> Mussoorie</a> and 12 km from <a href="">
+Chamba.</a>
+ It is on the <a href="">Chamba-Mussoorie </a>road and nearly 300 km from Delhi. 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<abc>
+<div class="no">
+<div class="b">
+<div class="container-full">
+<div class="row">
+<img src="Logo.png" alt="logo" width=80px height=80px>
+</div>
+
+<div class="row" style="background-color:black;padding:20px 20px 20px 20px;font-size:20px">
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2" ><input type="text" name="" placeholder="Departure From"></div>
+<div class="col-sm-2" style="margin-left:5px"><input type="text" name="" placeholder="To"></div>
+<div class="col-sm-2" style="margin-left:5px"><input type="text" name="" placeholder="Month"></div>
+<div class="col-sm-2" style="margin-left:5px"><input type="text" name="" placeholder="Phone no."></div>
+<div class="col-sm-2" style="margin-left:5px"><input type="text" name="" placeholder="Email"></div>
+
+<div class="col-sm-1"></div>
+<br/>
+<div class="row">
+<center><button style="margin-left:600px;background-color:orange;margin-top:20px"> Submit </button></center>
+</div>
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="col-sm-2"><img  class="pd" src="pdf.png" alt="pdf" 
+  style="padding-left:1100px;padding-top:0px ;" >
+  <p class="pdf" style="display:none;padding:0px 0px 0px 1100px;"> Download pdf</p>
+	<img  class="call" src="share.jpg" alt=""  style="padding-left:1070px;border:1px  solid black
+	padding-top:0px" >
+<p class="cal" style="display:none;padding:0px 0px 0px 1100px;"> Callus:8210424768</p>
+	</div>
+<div class="col-sm-7">
+<h1> Kanatal, Uttarakhand: 2 Night 2 Days
+</h1>
+<div class="row" style="background:black;color:white;padding-top:10px;">
+<!--
+<div class="col-sm-2"><button><h3>Photos</h3></button></div>
+
+<div class="col-sm-2 "><button class="inc"><h3>Inclusion</h3></button></div>
+<div class="col-sm-3 "><button class="det"><h3 >Detailed Itenary</h3></button></div>
+<div class="col-sm-3 "><button class="abt"><h3>About the place</h3></button></div>
+-->
+<p style="padding-left:30px"><button class="ph" style="background-color:black;">Photos</button></p><p style="padding-left:30px">
+<button class="inc" style="background-color:black;">Inclusion</button></p>
+<p style="padding-left:30px"><button class="det" style="background-color:black;">Detailed Itinerary</button></p>
+<p style="padding-left:30px"><button class="abt" style="background-color:black;">About the place</button></p>
+
+</div>
+<br/>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="UKL01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="UKL02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="UKL03.jpg" style="width:100%">
+	
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="UKL04.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="UKL05.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="UKL06.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="UKL07.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="UKL01.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="UKL02.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="UKL03.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="UKL04.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="UKL05.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="UKL06.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+	
+	</div>
+	<div class="col-sm-3"> </div>
+	<div class="col-sm-1"></div>
+	</div>
+	</div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <div class="container">
+<div class="row">
+<div class="col-sm-6" style="padding:20px 20px 20px 150px">   Inclusions 
+<p style="padding:0px 0px 0px 0px;">
+<i class="material-icons">restaurant</i>
+<i class="material-icons" style="padding-left:50px">flight</i>
+<span class="glyphicons glyphicons-car" style="padding:10px 10px 0px 10px"></span>
+<i class="material-icons" style="padding-left:20px" >directions_car</i>
+<i class="material-icons" style="padding-left:30px">hotel</i>
+<div class="row">
+<p style="padding:0px 10px 10px 10px"> Meals</p>
+<p style="padding:0px 10px 10px 10px">Plane</p>
+<p style="padding:0px 10px 10px 10px">Volvo</p>
+<p style="padding:0px 10px 10px 10px">2-seater</p>
+</p>
+</div>
+</div>
+<div class="col-sm-6" style="padding:20px 20px 0px 20px">   Themes
+<p style="padding:0px 0px 0px 0px;">
+
+<p style="padding:0px 0px 0px 0px;"><span class="glyphicon glyphicon-picture"></span> 
+ <span class="glyphicon glyphicon-phone" style="padding-left:60px"></span>
+<span class="glyphicon glyphicon-sunglasses" style="padding-left:70px;padding-top:0px"></span>
+<div class="row">
+<p style="padding:0px 10px 10px 10px"> Photo</p>
+<p style="padding:0px 10px 10px 10px">Phone</p>
+<p style="padding:0px 10px 10px 10px">Sunglasses</p>
+
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+<div class="container">
+<h1><b>About</b></h1>
+<p style="font-size:20px;">
+
+
+This trip is ideal for Groups.
+
+
+</p>
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-1"> </div>
+<div class="col-sm-5"> 
+<p style="padding:50px 0px 0px 0px"><b><u> Inclusions </u></b></p>
+<ul>
+<li>Meal as per Hotel/ Camp Plan</li>
+<li>Accommodation in a well-appointed room</li>
+<li>Driver's allowance, Road tax and Fuel charges</li>
+<li>Sightseeing & Transfer in Vehicle</li>
+<li>Parking and Toll tax</li>
+
+</ul>
+</div>
+
+<div class="col-sm-5"> 
+<b><p style="padding:50px 0px 0px 0px"> <u>Exclusions</u> </p></b>
+<ul>
+<li>5% GST</li>
+<li>Alcoholic / Non- Alcoholic beverages</li>
+<li>Expenses caused by factors beyond our control like rail and flight delays, roadblocks, vehicle mal-functions, political disturbances etc.
+<li>All personal expenses</li>
+<li>Travel insurance</li>
+<li>Camera fee</li>
+<li>Tips, laundry & phone call</li>
+<li>Any Airfare / Train fare</li>
+<li>Entrance fees to monuments and museum</li>
+
+</ul>
+
+</div>
+
+<div class="col-sm-1"> </div>
+</div>
+<div class="container-full">
+<div class="row">
+<div class="col-sm-1"> </div>
+<div class="col-sm-5"> 
+<p style="padding:50px 0px 0px 0px"><b><u>Payment Policy</u></b></p>
+<ul>
+<li>30 or more days before departure: 25%</li>
+<li>Between 29 to 15 days before departure: 50%</li>
+<li>Between 14 to 1 days before departure: 100%</li>
+</ul>
+</div>
+<div class="col-sm-5" style="padding-left:20px"> 
+
+
+<p style="padding:50px 0px 0px 0px"><u><b>Cancellation Policy</b></u></p><ul>
+<li>Cancellation charges per person</li>
+<li>30 or more days before departure: 25 %</li>
+<li>Between 29 to 16 days before departure: 50 %</li>
+<li>Between 15 to 1 days before departure: 75 %</li>
+
+
+</ul>
+
+</div>
+<div class="col-sm-1"> </div>
+</div>
+
+
+
+
+</div>
+
+<h1><b>Detailed  Itinerary:</b></h1>
+
+<h4><b>Day 1:</b></h4><p> Arrive at your pickup location our representative will welcome you. Drive to Kanatal Camp. Arrivals at campsite, Welcome drink (Non Alchoholic) on arrival Get freshen up and get your self-Acclimatized. Post Acclimatization, get ready for Adventurous Activities Rock climbing, Rappelling, Valley crossing, Burma Bridge etc. Return back to the camp till lunch. Post lunch free to play Ground Sports Activities or Indoor Games like Volley Ball, Football, Badminton, Cricket, Chess, Tambola and Carom etc. Evening at leisure & after sunset bonfire/campfire and bar-be-que snacks after bonfire Enjoy the dinner. Overnight stay in Luxury Tents on twin sharing basis.
+
+</p>
+<h4><b>Day 2:</b></h4><p> Morning Wake Up Call at 6:00 am. Morning Tea & snacks, trekking to acclimatize yourself. After Breakfast, Checkout from the Camp & drive to your destinations. On the way you may visit any of the nearby local attractions. This brings an end to the trip, head back with lots of happy memories and moments that will be cherished for a lifetime. 
+ 
+</p>
+<h3><b><u>Safety</u></b></h3><p> 
+
+As far as the safety and security is concerned the camp is absolutely safe having sufficient staff and our experienced Team members working 24 hours with security guards in and around the camp. Area is free from any danger species of animals. All adventure activities are conducted with utmost care under guidance of professional instructors. All our instructors are having long experience in adventure activities.
+
+</p>
+
+<h1><b>About the Place:</b></h1>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<img src="UKL02.jpg" alt="" height=180px width=300px></div>
+<div class="col-sm-8">
+<p>
+<b>Location: Kanatal</b> is a small village in the state of 
+<a href="">Uttarakhand</a>, India. <a href="">Kanatal</a> is 78 km from <a href="">Dehradun </a>
+(capital of the State Uttarakhand), 38 km from <a href=""> Mussoorie</a> and 12 km from <a href="">
+Chamba.</a>
+ It is on the <a href="">Chamba-Mussoorie </a>road and nearly 300 km from Delhi. 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<br/><!--endd -->
+</abc>
+<div class="a" style="display:none;">
+<div class=" container-full bg">
+<div class="container-full">
+
+<button class="back1" style="background-color:black;color:white;font-size:15px;
+margin-top:10px;margin-left:10px;">Click here to go back</button>
+</div>
+
+<div class="container-full">
+<div class="row">
+<div class="col-sm-1"> </div>
+<div class="col-sm-5"> 
+<p style="padding:50px 0px 0px 0px"><b><u> Inclusions </u></b></p>
+<ul>
+<li>Meal as per Hotel/ Camp Plan</li>
+<li>Accommodation in a well-appointed room</li>
+<li>Driver's allowance, Road tax and Fuel charges</li>
+<li>Sightseeing & Transfer in Vehicle</li>
+<li>Parking and Toll tax</li>
+
+</ul>
+</div>
+
+<div class="col-sm-5"> 
+<b><p style="padding:50px 0px 0px 0px"> <u>Exclusions</u> </p></b>
+<ul>
+<li>5% GST</li>
+<li>Alcoholic / Non- Alcoholic beverages</li>
+<li>Expenses caused by factors beyond our control like rail and flight delays, roadblocks, vehicle mal-functions, political disturbances etc.
+<li>All personal expenses</li>
+<li>Travel insurance</li>
+<li>Camera fee</li>
+<li>Tips, laundry & phone call</li>
+<li>Any Airfare / Train fare</li>
+<li>Entrance fees to monuments and museum</li>
+
+</ul>
+
+</div>
+
+<div class="col-sm-1"> </div>
+</div>
+<div class="container-full">
+<div class="row">
+<div class="col-sm-1"> </div>
+<div class="col-sm-5"> 
+<p style="padding:50px 0px 0px 0px"><b><u>Payment Policy</u></b></p>
+<ul>
+<li>30 or more days before departure: 25%</li>
+<li>Between 29 to 15 days before departure: 50%</li>
+<li>Between 14 to 1 days before departure: 100%</li>
+</ul>
+</div>
+<div class="col-sm-5" style="padding-left:20px"> 
+
+
+<p style="padding:50px 0px 0px 0px"><u><b>Cancellation Policy</b></u></p><ul>
+<li>Cancellation charges per person</li>
+<li>30 or more days before departure: 25 %</li>
+<li>Between 29 to 16 days before departure: 50 %</li>
+<li>Between 15 to 1 days before departure: 75 %</li>
+
+
+</ul>
+
+</div>
+<div class="col-sm-1"> </div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+<!--Photos -->
+
+</body>
+</html>
