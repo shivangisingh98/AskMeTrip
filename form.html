@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--location search-->
+		<link rel="stylesheet" href="location.css" />
+		
+</head>     
+
+<body>
+
+
+<!--Make sure the form has the autocomplete function switched off:-->
+<form class="form-inline" autocomplete="off" action="/examples/actions/confirmation.php" method="post">
+  <!--<div class="autocomplete" style="width:300px;">-->
+    <input id="myInput" type="text" name="myCountry" placeholder="Enter your pickup location">
+  <input id="myInput" type="text" name="myCountry" placeholder="Enter your destination">
+  
+		<input type="number" placeholder="travellers" />
+<input type="text" name="check_in" class="form-control" data-toggle="datepicker" placeholder="12 -01 - 2017 ">
+  </div>
+  
+</form>
+
+
+<!--location search.js-->
+        <script src="location.js"></script>
+		
+</body>
+</html>

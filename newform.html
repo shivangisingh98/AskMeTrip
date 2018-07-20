@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Inline Form Layout</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--location search-->
+		<link rel="stylesheet" href="location.css" />
+		<link rel="stylesheet" href="accor.css" />
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/22CF66D4-3A7B-2749-A374-05CB299DFBB1/main.js" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <form class="form-inline" autocomplete="off" action="/examples/actions/confirmation.php" method="post">
+	
+        
+		
+		
+ 
+ <div class="form-group">    
+ <div class="autocomplete">
+    <input id="myInput" type="text" name="myCountry" class="form-control" placeholder="Enter your pickup location">
+	</div></div>
+	
+	
+	 <div class="form-group">
+	 
+            <input type="text" class="form-control" id="inputPassword" placeholder="mobile no" required>
+        </div>
+		
+	
+  
+  
+  <div class="form-group">    
+		<input type="number" class="form-control" placeholder="travellers" />
+		</div>
+		
+		<div class="form-group">    
+<input type="text" name="check_in" class="form-control" data-toggle="datepicker" placeholder="12 -01 - 2017 ">
+  </div>
+ 
+            <div class="form-group">    
+           
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+        </div>
+		
+		<div class="form-group">    
+		<div class="autocomplete">
+  <input id="myInput" type="text" name="myCountry" class="form-control" placeholder="Enter your destination">
+  </div>
+  <button onclick="appendText()">Add destination</button>
+  </div>
+       
+		
+		<div class="form-group">
+		 <select class="form-control">
+                    <option>1 Night 2 Days</option>
+					<option>2 Night 3 Days</option>
+					<option>3 Night 4 Days</option>
+					<option>4 Night 5 Days</option>
+					<option>5 Night 6 Days</option>
+					<option>6 Night 7 Days</option>
+					<option>7 Night 8 Days</option>
+					<option>8 Night 9 Days</option>
+					<option>9 Night 10 Days</option>
+					<option>10 Night 11 Days</option>
+					<option>11 Night 12 Days</option>
+					<option>12 Night 13 Days</option>
+					<option>13 Night 14 Days</option>
+					<option>14 Night 15 Days</option>
+					<option>15 Night 16 Days</option>
+                </select>
+            </div>
+			
+			<div class="form-group">
+        <button class="accordion">Activities(optional)</button>
+<div class="panel">
+<label class="radio-inline"><input type="radio" name="gender">Culture</label>
+        <label class="radio-inline"><input type="radio" name="gender">Adventure</label>
+		<label class="radio-inline"><input type="radio" name="gender">Wildlife</label>
+		<label class="radio-inline"><input type="radio" name="gender">Beaches</label>
+		<label class="radio-inline"><input type="radio" name="gender">Romantic</label>
+		<label class="radio-inline"><input type="radio" name="gender">Historical & Geographical</label>
+         </div>
+        </div>
+		
+        <button type="submit" class="btn btn-primary">submit</button>
+		
+    </form>
+    
+</div>
+<!--location search.js-->
+        <script src="accor.js"></script>
+		     <script src="adddest.js"></script>
+			 <script src="location.js"></script>
+			 
+			 
+
+</body>
+</html>                            
